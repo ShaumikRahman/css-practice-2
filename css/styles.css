@@ -117,4 +117,69 @@ header .header-links a {
   margin: 1rem .5rem;
   font-size: 1.5rem;
 }
+
+main .island {
+  margin: 2.5rem;
+  border-radius: 1rem;
+  background-color: #fff000;
+}
+
+main .island h1 {
+  padding: 1rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+main .island .island-items a {
+  text-decoration: none;
+  color: #444444;
+}
+
+main .island .island-items .item {
+  text-align: center;
+}
+
+main .island .island-items .item .item-img {
+  height: 12rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+}
+
+main .island .island-items .item .item-header {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+main .island .island-items .item .item-genres {
+  transform: scale(0.85);
+}
+
+main .island .island-items .item .item-genres .item-genres-list {
+  margin-top: 1rem;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .island .island-items .item .item-genres .item-genres-list p {
+  margin: 0.25rem 1rem;
+  padding: .5rem .5rem;
+  display: inline;
+  border-radius: 1.5rem;
+  font-size: 2rem;
+  color: #e4e4e4;
+  background-color: #3D4C53;
+}
+
+main .island .island-items .item .item-genres .item-genres-list p a {
+  color: inherit;
+}
+
+main .island .island-items .item .item-date {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
 /*# sourceMappingURL=styles.css.map */
