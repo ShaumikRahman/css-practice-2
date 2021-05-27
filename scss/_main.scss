@@ -1,0 +1,85 @@
+main {
+  .island {
+    margin: 2.5rem;
+    border-radius: 1rem;
+    background-color: $light-grey;
+
+    h1 {
+      padding: 1rem;
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .island-items {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            color: $greyed;
+        }
+
+      .item {
+          transform: scale(.95);
+          background-color: lighten(#878787, 10%);
+          border-radius: 1.5rem;
+        margin-bottom: 3rem;
+        text-align: center;
+
+        &:hover {
+            background-color: darken(#878787, 10%);
+        }
+
+        .item-img {
+            transform: scale(.9);
+          height: 16rem;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+          border-radius: 1rem;
+          overflow: hidden;
+        }
+
+        .item-header {
+          margin-top: 1rem;
+          font-size: 1.5rem;
+        }
+
+        .item-genres {
+            transform: scale(.85);
+
+            .item-genres-list {
+                margin-top: 1rem;
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+      
+                p {
+                    margin: 0.25rem 1rem;
+                    padding: .5rem .5rem;
+                  display: inline;
+                  border-radius: 1.5rem;
+                  font-size: 2rem;
+                  color: $plain-white;
+                  background-color: $material-grey;
+      
+                  a{
+                      color: inherit;
+                  }
+                }
+              }
+        }
+
+        .item-date {
+            margin-top: 1rem;
+            font-size: 2rem;
+        }
+
+        
+      }
+    }
+  }
+}

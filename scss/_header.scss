@@ -1,0 +1,89 @@
+header {
+    background-color: $light-grey;
+    font-family: $roboto;
+    color: $greyed;
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem 0;
+        }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .header-search {
+
+        input {
+            height: 2rem;
+            text-align: center;
+            border-radius: .5rem;
+            margin-left: 3rem;
+            border: none;
+            outline: none;
+            transition: all 150ms ease-in-out;
+        }
+
+        input:focus {
+            box-shadow: 2px 2px 1px 1px black;
+        }
+
+        button {
+            width: 1.625rem;
+            height: 1.625rem;
+            border-radius: .75rem;
+            cursor: pointer;
+            border: none;
+            
+        }
+    }
+
+    .account-button, .sidebar-button {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: .5rem;
+        color: $plain-white;
+        border-radius: 0.375rem;
+        border: none;
+        background-color: $material-grey;
+        transition: all 200ms ease-in-out;
+
+        &:hover, &:active, &:target, &:focus {
+            background-color: $plain-white;
+            color: $greyed;
+            cursor: pointer;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        transition: all 200ms ease-in-out;
+    }
+
+    a:hover, a:target, a:focus, a:active {
+        color: darken($greyed, 20%);
+    }
+
+    .mobile-header-section {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header-links {
+        background-color: darken($light-grey, 20%);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+        a {
+            margin: 1rem .5rem;
+            font-size: 1.5rem;
+        }
+    }
+
+}

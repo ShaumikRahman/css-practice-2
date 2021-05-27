@@ -13,6 +13,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+body.scroll-control {
+  position: fixed;
+}
+
 @media (max-width: 39.9375em) {
   .flex-switch-small {
     flex: 12%;
@@ -53,6 +57,24 @@ body::-webkit-scrollbar {
   .hide-on-medium {
     display: none;
   }
+}
+
+.overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  visibility: hidden;
+}
+
+.overlay.open {
+  visibility: visible;
+  opacity: 1;
 }
 
 header {
@@ -212,14 +234,14 @@ main .island .island-items a {
 
 main .island .island-items .item {
   transform: scale(0.95);
-  background-color: #878787;
+  background-color: #a1a1a1;
   border-radius: 1.5rem;
   margin-bottom: 3rem;
   text-align: center;
 }
 
 main .island .island-items .item:hover {
-  background-color: #a1a1a1;
+  background-color: #6e6e6e;
 }
 
 main .island .island-items .item .item-img {
@@ -228,6 +250,7 @@ main .island .island-items .item .item-img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  border-radius: 1rem;
   overflow: hidden;
 }
 

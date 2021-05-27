@@ -1,0 +1,39 @@
+.flex-switch-small {
+  @include breakpoint-down(small) {
+    flex: 12%;
+  }
+}
+
+.item {
+  @include breakpoint-up(small) {
+    flex: 50%;
+  }
+
+  @include breakpoint-up(large) {
+    flex: 33%;
+  }
+
+  @include breakpoint-up(xlarge) {
+    flex: 0 0.25 25%;
+  }
+}
+
+.header-links {
+    & > a {
+        @include breakpoint-down(large) {
+            flex: 25%;
+          }
+    }
+}
+
+.hide-on-small {
+  @include breakpoint-down(small) {
+    display: none;
+  }
+}
+
+.hide-on-medium {
+  @include breakpoint-up(medium) {
+    display: none;
+  }
+}
